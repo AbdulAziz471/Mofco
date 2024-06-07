@@ -23,186 +23,221 @@
     <link href="../style.css" rel="stylesheet">
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="../img/site-favicon.png">
-    <link rel="apple-touch-icon" href="../img/site-favicon.png">
+    <link rel="shortcut icon" href="../img/MofcoImages/mofcoMain.png">
+    <link rel="apple-touch-icon" href="../img/MofcoImages/mofcoMain.png">
     <!--/ Favicons -->
-
-    <!-- Color Options -->
-    <style id="nayla-body-styles">
-        body.light {
-            --mainColor: #000 !important;
-            --mainBackground: #f1f1f1 !important;
-            --secondaryBackground: #a1a1a1 !important;
-        }
-
-        body.dark,
-        .light:not(body) {
-            --mainColor: #fff !important;
-            --mainBackground: #191919 !important;
-            --secondaryBackground: #fff !important;
-        }
-
-        h1 {
-            cursor: pointer !important;
-            /* Indicates interactivity */
-            white-space: nowrap !important;
-            /* Keeps the line unbroken */
-        }
-
-
-        .main-heading {
-            text-wrap: wrap !important;
-        }
-
-        h1 {
-            cursor: pointer;
-            /* Indicates interactivity */
-            white-space: nowrap;
-            /* Keeps the line unbroken */
-        }
-
-        .animate-text {
-            display: inline-block;
-            /* Allows animation of each span individually */
-            margin-right: 5px;
-            /* Adds space between words */
-            text-wrap: wrap !important;
-        }
-
-        .animated-heading {
-            text-wrap: wrap !important;
-        }
-    </style>
-    <!--/ Color Options -->
 
 </head>
 
 <body class="light" data-barba="wrapper">
 
     <!-- Page Loader -->
-    <div class="page-loader blocks up">
+    <div class="page-loader columns">
 
         <!-- Percentage (Don't Touch) -->
-        <div class="page-loader-percentage"></div>
+        <div class="page-loader-logo">
+            <img src="../img/MofcoImages/mofcoMain.png">
+        </div>
         <!-- Percentage (Don't Touch) -->
 
     </div>
     <!--/ Page Loader -->
 
     <!-- Page Transitions -->
-    <div class="nayla-page-transition block up capt-bottom-left offset-x">
+    <div class="nayla-page-transition columns up capt-bottom-left default">
 
         <!-- Caption -->
         <div class="page-transition-caption">
-            LOADING, PLEASE WAIT...
+            LOADING PLEASE WAIT..
         </div>
         <!--/ Caption -->
 
     </div>
-    <!-- Page Transitions -->
+    <!--/ Page Transitions -->
 
     <!-- Mouse Cursor -->
-    <div id="mouseCursor" class="circle"> </div>
+    <div id="mouseCursor" class="dot"></div>
     <!--/ Mouse Cursor -->
-
 
     <!-- Page -->
     <div id="page">
 
-        <div class="menu-overlay" style="background: #191919"></div>
+        <div class="menu-overlay"></div>
 
         <!-- Site Header -->
-        <div id="header" class="site-header dynamic">
+        <div id="header" class="site-header  dark">
 
-            <div class="header-wrapper wrapper-full">
+            <!-- Header Wrapper -->
+            <div class="header-wrapper wrapper">
 
-                <div class="c-col-6 sm-6">
+                <div class="c-col-4 sm-6">
 
-                    <!-- Site Branding -->
+                    <!--  Site Branding -->
                     <div class="site-branding">
 
+                        <!--  Site Logo -->
                         <div class="site-logo">
 
                             <img alt="Site Logo (Dark)" class="dark-logo" src="../img/MofcoImages/mofcoMain.png">
-                            <img alt="Site Logo (Light)" class="light-logo" src="../img/site-logo-light.png">
+                            <img alt="Site Logo (Light)" class="light-logo" src="../img/MofcoImages/mofcoMain.png">
 
                         </div>
+                        <!--/  Site Logo -->
 
+                        <!--  Sticky Logo -->
                         <div class="sticky-logo">
 
-                            <img alt="Sticky Logo (Dark)" class="sticky-dark-logo" src="../img/sticky-logo.png">
-                            <img alt="Sticky Logo (Light)" class="sticky-light-logo" src="../img/sticky-logo-light.png">
+                            <img alt="Sticky Logo (Dark)" class="sticky-dark-logo"
+                                src="../img/MofcoImages/mofcoMain.png">
+                            <img alt="Sticky Logo (Light)" class="sticky-light-logo"
+                                src="../img/MofcoImages/mofcoMain.png">
 
                         </div>
+                        <!--/  Sticky Logo -->
 
                     </div>
-                    <!--/ Site Branding -->
+                    <!--  Site Branding -->
 
                 </div>
 
-                <div class="c-col-6 sm-6 align-right">
+                <div class="c-col-4 hide-mobile">
 
-                    <!-- Button -->
-                    <div class="nayla-button button-sm underline icon-right hide-mobile" data-icon="arrow_outward">
+                    <!--  Text -->
+                    <div class="text-wrapper hide-sticky align-center">
 
-                        <a href="mailto:hello@pethemes.com">START A PROJECT</a>
+                        <p></p>
 
                     </div>
-                    <!--/ Button -->
+                    <!--/ Text -->
 
-                    <!-- Menu Toggle -->
+                </div>
+
+                <div class="c-col-4 sm-6 align-right hide-mobile">
+
+                    <div class="nayla-layout-switcher ls_switcher hide-sticky">
+                        <span class="active-follower"></span>
+
+                        <span data-value="dark" class="switch-light">LIGHT</span>
+                        <span data-value="light" class="switch-dark">DARK</span>
+
+                    </div>
+
+                    <!--  Menu Toggle -->
                     <div class="menu-toggle">
 
-                        <div class="toggle-text" data-close-text="CLOSE">
+                        <div class="toggle-lines">
 
-                            <span>MENU</span>
-
+                            <div class="toggle-line"></div>
+                            <div class="toggle-line"></div>
                         </div>
 
+
                     </div>
-                    <!--/ Menu Toggle -->
+                    <!--/  Menu Toggle -->
 
                 </div>
 
             </div>
+            <!--/ Header Wrapper -->
 
             <!-- Fullscreen Menu -->
             <div id="site-navigation" class="fullscreen_menu fullscreen">
 
                 <div class="wrapper fullscreen-menu-wrapper">
 
+                    <div class="c-col-3 hide-mobile self-center">
 
-                    <div class="c-col-12">
+                        <!-- Menu -->
+                        <ul class="menu" data-animation="linesUp">
+
+                            <li><a href="#.">Documentation</a></li>
+                            <li><a href="#.">Support</a></li>
+                            <li><a href="#.">Purchase</a></li>
+
+                        </ul>
+                        <!--/ Menu -->
+
+                    </div>
+
+                    <div class="c-col-3 hide-mobile self-center">
+
+                        <!-- Menu -->
+                        <ul class="menu" data-animation="linesUp">
+
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Behance</a></li>
+
+                        </ul>
+                        <!--/ Menu -->
+
+                    </div>
+
+                    <div class="c-col-6 sm-12">
 
                         <!-- Main Menu -->
-                        <ul class="menu main-menu align-center">
+                        <ul class="menu main-menu">
 
-                            <li><a href="http://localhost/nayla-last/home-architecture.html">Home</a></li>
-                            <li><a href="http://localhost/nayla-last/pages/works-architecture.html">Works</a></li>
-                            <li><a href="http://localhost/nayla-last/pages/about-architecture.html">About</a></li>
-                            <li><a href="http://localhost/nayla-last/pages/services-architecture.html">Services</a></li>
-                            <li><a href="http://localhost/nayla-last/pages/contact-architecture.html">Contact</a></li>
+                            <li><a href="http://localhost/nayla-last">Home</a></li>
+                            <li><a href="http://localhost/nayla-last/pages/works.html">Projects</a></li>
+                            <li><a href="http://localhost/nayla-last/pages/about-us.html">About</a></li>
+                            <li><a href="http://localhost/nayla-last/pages/services.html">Services</a></li>
+                            <li><a href="http://localhost/nayla-last/pages/team.html">Team</a></li>
+                            <li><a href="http://localhost/nayla-last/home-blog.html">Insights</a></li>
+                            <li><a href="http://localhost/nayla-last/pages/contact.html">Contact</a></li>
 
                         </ul>
                         <!--/ Main Menu -->
 
                     </div>
 
+                    <!-- Empty Column (For Spacing) -->
+                    <div class="c-col-2 hide-mobile"></div>
+                    <!--/ Empty Column (For Spacing) -->
+
+                    <!-- Fullscreen Menu Bottom -->
                     <div class="fullscreen-menu-wrap-bottom">
 
-                        <div class="c-col-12 has-anim fadeUp" data-delay=0.3>
+                        <div class="c-col-3 hide-mobile">
 
-                            <!-- Text -->
-                            <div class="text-wrapper justify-text" style="opacity: 0.05">
+                            <div class="single-image has-anim-image scaleUp imgScale" data-delay=.3>
 
-                                <p class="text-h2">ELEVATE YOUR SPACES, INSPIRE YOUR WORLD.</p>
+                                <img src="../img/agency_mag.jpg">
 
                             </div>
-                            <!--/ Text -->
+
+                        </div>
+
+                        <!-- Empty Column (For Spacing) -->
+                        <div class="c-col-3 hide-mobile"> </div>
+                        <!--/ Empty Column (For Spacing) -->
+
+                        <div class="c-col-3 sm-12 has-anim fadeDown" data-delay=.4>
+
+                            <!-- Button -->
+                            <div class="nayla-button underline icon-right" data-icon="arrow_outward">
+
+                                <a href="#">info@mofcogroup.com</a>
+
+                            </div>
+                            <!--/ Button -->
+
+                        </div>
+
+                        <div class="c-col-3 sm-12 has-anim fadeDown" data-delay=.4>
+
+                            <!-- Button -->
+                            <div class="nayla-button underline icon-right" data-icon="arrow_outward">
+
+                                <a href="#">+44 852 748 45 12</a>
+
+                            </div>
+                            <!--/ Button -->
 
                         </div>
 
                     </div>
+                    <!--/ Fullscreen Menu Bottom -->
 
                 </div>
 
@@ -213,7 +248,6 @@
         <!--/ Site Header -->
 
 
-        <!-- Main -->
         <main id="primary" class="site-main" data-barba="container">
 
             <!-- Page Content -->
@@ -221,79 +255,15 @@
 
                 <div class="section">
 
-                    <div class="wrapper-full no-margin" style="min-height: 80vh">
+                    <div class="wrapper">
 
-                        <div class="c-col-12">
-
-                            <!-- Heading -->
-                            <div class="nayla-heading">
-
-                                <h1>GET IN
-                                    <br>TOUCH
-                                </h1>
-
-                            </div>
-                            <!--/ Heading -->
-
-                        </div>
-
-                        <div class="c-col-3 sm-6">
+                        <div class="c-col-8 sm-12">
 
                             <!-- Text -->
                             <div class="text-wrapper">
 
-                                <p>PHONE</p>
-
-                            </div>
-                            <!--/ Text -->
-
-                            <!-- Button -->
-                            <div class="nayla-button">
-
-                                <a href="#." class="underline text-h5" data-animation="charsUp" data-duration=2
-                                    data-stagger=0.025 data-hover="all">
-
-                                    +44 (150) 784 14 78
-
-                                </a>
-
-                            </div>
-                            <!--/ Button -->
-
-                            <!-- Text -->
-                            <div class="text-wrapper">
-
-                                <p>E-MAIL</p>
-
-                            </div>
-                            <!--/ Text -->
-
-                            <!-- Button -->
-                            <div class="nayla-button">
-
-                                <a href="#." class="underline text-h5" data-animation="charsUp" data-duration=2
-                                    data-stagger=0.025 data-hover="all">
-
-                                    hello@pethemes.com
-
-                                </a>
-
-                            </div>
-                            <!--/ Button -->
-
-                        </div>
-
-                        <div class="c-col-3 sm-6">
-
-                            <!-- Text -->
-                            <div class="text-wrapper">
-
-                                <p>ADDRESS</p>
-
-                                <p class="text-h5">Cotter & Naessens,
-                                    <br>28 South Mall,
-                                    <br>Cork, Ireland,
-                                    <br>T12X 6CP
+                                <p class="text-h1 no-margin">Get in touch.
+                                    <br> <a href="info@mofcogroup.com">info@mofcogroup.com</a>
                                 </p>
 
                             </div>
@@ -301,7 +271,83 @@
 
                         </div>
 
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="c-col-3 sm-12">
+
+                            <!-- Text -->
+                            <div class="text-wrapper">
+
+                                <p>Saudi Arabia</p>
+
+                                <p class="text-h6">
+                                    <br><a href="tel:449512548">+78 (345) 147 85 74</a>
+                                    <br>
+                                    <br>P.O. Box 15,, Saudi Arabia
+                                    <br>Al-Khobar 31952,
+                                </p>
+
+
+
+                            </div>
+                            <!--/ Text -->
+
+                        </div>
+
+                        <!-- Empty Column (For Spacing) -->
+                        <div class="c-col-3 hide-mobile"></div>
+                        <!--/ Empty Column (For Spacing) -->
+
+                        <div class="c-col-3 sm-12">
+
+                            <!-- Text -->
+                            <div class="text-wrapper align-right">
+
+                                <p>ASISTANCE HOURS</p>
+
+                                <p class="text-h6">
+                                    Monday – Friday
+                                    <br>6 am to 8 pm EST (toll free)
+                                </p>
+
+                            </div>
+                            <!--/ Text -->
+
+                        </div>
+
+                    </div>
+
+                    <div class="wrapper">
+
+                        <div class="c-col-4 sm-12">
+
+                            <!-- Single Image -->
+                            <div class="single-image parallax-image">
+
+                                <img src="../img/MofcoImages/Contact.jpg" alt="Single Image">
+
+                            </div>
+                            <!--/ Single Image -->
+
+                        </div>
+
+                        <!-- Empty Column (For Spacing) -->
+                        <div class="c-col-2 hide-mobile"></div>
+                        <!--/ Empty Column (For Spacing) -->
+
                         <div class="c-col-6 sm-12">
+
+                            <!-- Text -->
+                            <div class="text-wrapper">
+
+                                <p class="text-h6">FOR INQUIRIES</p>
+                            </div>
+                            <!--/ Text -->
+
+                            <!-- Empty Space -->
+                            <span class="empty-space hide-mobile" style="height: 35px"></span>
+                            <!--/ Empty Space -->
 
                             <!-- Contact Form -->
                             <div class="nayla-form">
@@ -309,7 +355,7 @@
                                 <form action="/" method="post">
 
                                     <!-- Form Field -->
-                                    <div class="field-wrap half-wrap">
+                                    <div class="field-wrap">
                                         <label>
                                             Company Name
                                         </label>
@@ -318,7 +364,7 @@
                                     <!--/ Form Field -->
 
                                     <!-- Form Field -->
-                                    <div class="field-wrap half-wrap">
+                                    <div class="field-wrap">
                                         <label>
                                             Your Name
                                         </label>
@@ -327,7 +373,7 @@
                                     <!--/ Form Field -->
 
                                     <!-- Form Field -->
-                                    <div class="field-wrap half-wrap">
+                                    <div class="field-wrap">
                                         <label>
                                             Phone number
                                         </label>
@@ -336,7 +382,7 @@
                                     <!--/ Form Field-->
 
                                     <!-- Form Field -->
-                                    <div class="field-wrap half-wrap">
+                                    <div class="field-wrap">
                                         <label>
                                             E-mail
                                         </label>
@@ -371,24 +417,7 @@
                                 </form>
 
                             </div>
-                            <!--/ Contact Form -->
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="wrapper-full no-gap">
-
-                        <div class="c-col-12 no-gap">
-
-                            <!-- Single Image -->
-                            <div class="single-image">
-
-                                <img alt="Single Image" src="../img/office_3_hor.jpg">
-
-                            </div>
-                            <!--/ Single Image -->
+                            <!--/Contact Form -->
 
                         </div>
 
@@ -400,33 +429,113 @@
             <!--/ Page Content -->
 
         </main>
-        <!--/ Main -->
-
         <!-- Footer -->
-        <div id="footer" class="site-footer">
+        <div id="footer" class="site-footer" style="background: #d7d7d7">
 
             <div class="footer-wrapper">
 
+                <!-- Footer Top Wrapper -->
                 <div class="wrapper footer-top-wrapper">
 
-                    <div class="c-col-8">
+                    <div class="c-col-3 sm-12">
 
-                        <div class="nayla-button underline icon-right text-h2" data-icon="arrow_outward">
+                        <!-- Footer Logo -->
+                        <div class="single-image" style="width: 50px">
 
-                            <a href="#">HELLO@PETHEMES.COM</a>
-
-                        </div>
-
-                        <div class="nayla-button underline icon-right text-h2" data-icon="arrow_outward">
-
-                            <a href="#">+44 4715 14 41</a>
+                            <img alt="Single Image" src="../img/MofcoImages/mofcoMain.png">
 
                         </div>
+                        <!--/ Footer Logo -->
+
+                    </div>
+
+                    <div class="c-col-6 sm-12">
+
+                        <!-- Text Wrapper -->
+                        <div class="text-wrapper">
+
+                            <p class="text-h2">Let's collaborate.
+                                <br><a href="mailto:hello@pethemes.com">hello@pethemes.com</a>
+                            </p>
+
+                        </div>
+                        <!--/ Text Wrapper -->
+
+                    </div>
+
+                    <div class="c-col-3 sm-6 hide-mobile">
+
+                        <!-- Text -->
+                        <div class="text-wrapper align-right">
+
+                            <p>Follow Us</p>
+
+                        </div>
+                        <!--/ Text -->
+
+                        <!-- Menu -->
+                        <ul class="menu text-h6 align-right">
+
+                            <li><a href="#.">Facebook</a></li>
+                            <li><a href="#.">Instagram</a></li>
+                            <li><a href="#.">Twitter</a></li>
+                            <li><a href="#.">Linkedin</a></li>
+                            <li><a href="#.">Vimeo</a></li>
+
+                        </ul>
+                        <!--/ Menu -->
+
+                    </div>
+
+                </div>
+                <!--/ Footer Top Wrapper -->
+
+                <!-- Footer Bottom Wrapper -->
+                <div class="wrapper footer-bottom-wrapper">
+
+                    <div class="c-col-3 sm-12">
+
+                        <!-- Copyright -->
+                        <div class="text-wrapper">
+
+                            <p>© 2023</p>
+
+                        </div>
+                        <!--/ Copyright -->
+
+                    </div>
+                    <div class="c-col-3 sm-12">
+
+                        <!-- Menu -->
+                        <ul class="menu">
+
+                            <li><a href="#.">Documentation</a></li>
+                            <li><a href="#.">Support</a></li>
+                            <li><a href="#.">Purchase</a></li>
+
+                        </ul>
+                        <!--/ Menu -->
+
+
+                    </div>
+                    <div class="c-col-3 sm-6">
+
+
+                        <!-- Text -->
+                        <div class="text-wrapper no-margin">
+
+                            <p class="no-margin">42 West Street,
+                                <br>Apt 217,
+                                <br>Brooklyn New York 11201
+                            </p>
+
+                        </div>
+                        <!--/ Text -->
 
 
                     </div>
 
-                    <div class="c-col-4">
+                    <div class="c-col-3 sm-6">
 
                         <!-- Scroll Top Icon -->
                         <div class="nayla-icon align-right scroll-button" data-scroll-to=0
@@ -440,52 +549,8 @@
 
                     </div>
 
-
                 </div>
-
-                <div class="wrapper footer-bottom-wrapper">
-
-                    <div class="c-col-3">
-
-                        <div class="text-wrapper">
-
-                            <p>
-                                <br>© 2023
-                                <br>Nayla Architecture
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div class="c-col-2 hide-mobile"></div>
-
-                    <div class="c-col-4">
-
-                        <ul class="menu horizontal">
-
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Indutry</a></li>
-                            <li><a href="#">Contact</a></li>
-
-                        </ul>
-
-
-                    </div>
-                    <div class="c-col-3">
-
-                        <div class="text-wrapper align-right">
-
-                            <p>284 Zeyna Street
-                                <br>Singapore 48521
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                </div>
+                <!--/ Footer Bottom Wrapper -->
 
             </div>
 
